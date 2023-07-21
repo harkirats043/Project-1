@@ -2,6 +2,9 @@
 
 This game ask users to list of populatar questions and Move to next question after user guess it right.
 
+## ScreenShots
+
+
 
 ## Technolgies used
 
@@ -14,6 +17,8 @@ DOM Manipulation
 2.
 3.
  
+ ## Next Steps 
+
  
  
 ## Sources 
