@@ -1,0 +1,20 @@
+ .container {
+position: absolute;
+top: 50px;
+left: 50px;
+margin: 0px;
+display: flex;
+border: 1px solid red;
+background-color: azure;
+
+}
+
+#button {
+ background-color: aqua; 
+ display: flex;
+ align-items: center;
+}
+
+h1 {
+float: center;
+} 
