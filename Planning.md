@@ -30,3 +30,10 @@ add css styling / background color for option
 mouse hover option
 
 body color , question color, border radius, style, postioning of  button elements 
+
+
+
+
+
+
+![Alt text](<Untitled drawing.png>)
