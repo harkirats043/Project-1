@@ -12,10 +12,9 @@ let btnEl = document.querySelectorAll("#allBtns button");
 // Storing next Button
 let nextEl = document.querySelector("#next");
 
-
 let myQuestions = [ 
  {
-    question1: "What is the capital of Canada?",
+    question: "What is the capital of Canada?",
     answers: [
     {option: "Toronto", correct: false},
     {option: "Montreal", correct: false},
@@ -70,19 +69,28 @@ let myQuestions = [
 
  function renderQuestion(){
 // Accessing the question from the array
-questionEl.innerHTML = myQuestions[currentQuestion].question1
+questionEl.innerHTML = myQuestions[currentQuestion].question
 
 // Accessing the option element from the array
 optionEl = myQuestions[currentQuestion].answers;
+console.log(optionEl)
 
     btnEl.forEach(function(btn,index){
-   btn.innerText = myQuestions[currentQuestion].answers[index].option;
-
+   btn.innerText = myQuestions[0].answers[index].option;
     })
  }
+ 
+ nextEl.addEventListener("click", handleClick)
 
 
-
+ function handleClick() {
+    currentQuestion++; 
+    if (currentQuestion < myQuestions.length) {
+    renderQuestion(); 
+    }
+    }
+    
+    
 
  init();
   
