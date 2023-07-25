@@ -3,17 +3,19 @@ console.log("js-loaded");
 let pScore;
  let results;
 
+let currentQuestion = 0;
 
-let btnEl1 = document.querySelector("#buttonOne");
-let btnEl2 = document.querySelector("#buttonTwo");
-let btnEl3 = document.querySelector("#buttonThree");
-let btnEl4 = document.querySelector("#buttonFour");
-
+ // Storing Question
+ let questionEl = document.querySelector("#ques");
+ // Storing button Elements
+let btnEl = document.querySelectorAll("#allBtns button");
+// Storing next Button
+let nextEl = document.querySelector("#next");
 
 
 let myQuestions = [ 
  {
-    question: "What is the capital of Canada?",
+    question1: "What is the capital of Canada?",
     answers: [
     {option: "Toronto", correct: false},
     {option: "Montreal", correct: false},
@@ -59,15 +61,31 @@ let myQuestions = [
 }
 ];
 
-let qEl = document.querySelector("#ques");
-qEl.innerHTML = myQuestions[0].question
 
- function init() {
 
-   myQuestions.forEach(question){
-    return 
-     
-   }
-}
- 
-    
+ function init(){
+
+    renderQuestion();
+ }
+
+ function renderQuestion(){
+// Accessing the question from the array
+questionEl.innerHTML = myQuestions[currentQuestion].question1
+
+// Accessing the option element from the array
+optionEl = myQuestions[currentQuestion].answers;
+
+    btnEl.forEach(function(btn,index){
+   btn.innerText = myQuestions[currentQuestion].answers[index].option;
+
+    })
+ }
+
+
+
+
+ init();
+  
+  
+  
+  
