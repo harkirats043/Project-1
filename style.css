@@ -1,34 +1,30 @@
+ *{
+    background-color: rgb(174, 197, 197);
+    background-image: url(https://i.stack.imgur.com/zGR9G.jpg);
+ }
+ 
  .container {
 position: absolute;
 top: 30px;
 left: 40px;
 margin: 80px;
 margin-left: 8%;
-display: flex;
-border: 1px solid red;
-background-color: azure;
-height: 300px;
-width: 70%;
+border: 2px solid red;
+height: 350px;
+width: 80%;
 border-radius: 8px;
 
 }
 
 h1 {
 text-align: center;
-border: 1px solid green;
+border: 2px solid green;
 height: 10%;
 } 
 
 h2 {
-    margin-left: 55vmin;
-    justify-content: center;
     border: 1px solid maroon;
-    align-items: center;
-    text-align: justify;
-}
-#ques{
-    height: 20%;
-    width: 40%;
+    height: 55px;
 }
 #allBtns{
 display: flex;
