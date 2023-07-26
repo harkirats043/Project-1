@@ -57,7 +57,34 @@ let myQuestions = [
             { option: "Dried Beans", correct: false },
             { option: "Honey", correct: true }
         ]
-    }
+    },
+    {
+        question: "What is the most common letter in the English alphabet?",
+        answers: [
+          { option: "A", correct: false },
+          { option: "S", correct: false },
+          { option: "E", correct: true },
+          { option: "I", correct: false }
+        ]
+      },
+      {
+        question: "What is the driest continent?",
+        answers: [
+          { option: "Africa", correct: false },
+          { option: "Antarctica", correct: true },
+          { option: "South America", correct: false },
+          { option: "Asia", correct: false }
+        ]
+      },
+      {
+        question: "Which is the only edible food that never goes bad?",
+        answers: [
+          { option: "Rice", correct: false },
+          { option: "Seeds", correct: false },
+          { option: "Dried Beans", correct: false },
+          { option: "Honey", correct: true }
+        ]
+      }
 ];
 
 
@@ -73,7 +100,6 @@ function renderQuestion() {
 
     // Accessing the option element from the array
     optionEl = myQuestions[currentQuestion].answers;
-    console.log(optionEl)
 
     btnEl.forEach(function (btn, index) {
         btn.innerText = myQuestions[currentQuestion].answers[index].option;
@@ -82,19 +108,26 @@ function renderQuestion() {
 
 nextEl.addEventListener("click", handleClick)
 
+btnEl.forEach(function(btn) {
+    btn.addEventListener("click", changeColor)
+  
+  });
+  
+  function changeColor(event) {
+    event.target.style.backgroundColor = "green";
+  }
 
 function handleClick() {
     currentQuestion++;
     if (currentQuestion < myQuestions.length) {
         renderQuestion();
     }
+    else {
+        nextEl.style.display = "none";
+    }
 }
 
 
- //btnEl.forEach(btn, index){
-    //btnEl.addEventListener("click", handleClick)
-   // btn.style.backgroundColor = "green";
-//}
 
 
 init();
