@@ -1,7 +1,7 @@
 console.log("js-loaded");
 
 let pScore = 0;
-let results;
+
 
 let currentQuestion = 0;
 
