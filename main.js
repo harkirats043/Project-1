@@ -103,16 +103,14 @@ function renderQuestion() {
   btnEl.forEach(function(btn, index) {
     btn.innerText = myQuestions[currentQuestion].answers[index].option;
   })
-  scoreEl.innerHTML = pScore;
+  scoreEl.innerHTML = "Current Score: " + pScore;
 }
 
 btnEl.forEach(function(btn) {
-  btn.addEventListener("click", changeColor)
   btn.addEventListener("click", handleClick)
 });
 
-function changeColor(event) {
-}
+
 
 function handleClick(event) {
 
@@ -138,6 +136,7 @@ function handleClick(event) {
 
 function resetGame() {
   currentQuestion = 0;
+  pScore = 0;
   btnEl.forEach(function(btn) {
   });
   renderQuestion();
