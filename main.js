@@ -107,13 +107,11 @@ function renderQuestion() {
 }
 
 btnEl.forEach(function(btn) {
-  //todo fix css background color
   btn.addEventListener("click", changeColor)
   btn.addEventListener("click", handleClick)
 });
 
 function changeColor(event) {
-  event.target.style.backgroundColor = "green";
 }
 
 function handleClick(event) {
@@ -128,7 +126,6 @@ function handleClick(event) {
   if (userRes.correct === true){
     pScore++;
   }
-  //step 3 go to next page
   currentQuestion++;
   if (currentQuestion < myQuestions.length) {
     renderQuestion();
@@ -145,10 +142,6 @@ function resetGame() {
   });
   renderQuestion();
 }
-function checkAnwers(){
-  
-}
-
 init();
 
 
