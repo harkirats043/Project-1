@@ -8,8 +8,9 @@
     left: 40px;
     margin: 80px;
     margin-left: 8%;
+    padding-left:10px;
     border: 2px solid red;
-    height: 370px;
+    height: 500px;
     width: 80%;
     border-radius: 8px;
   
@@ -22,8 +23,12 @@
   }
   
   h2 {
-    border: 1px solid maroon;
+    border: 2px solid maroon;
     height: 55px;
+    padding: 5px;
+    font-size: 28px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   #allBtns {
@@ -34,7 +39,8 @@
   .button {
     margin: 5px;
     padding: 8px 16px;
-    font-size: 16px;
+    font-size: 22px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   #next {
@@ -44,8 +50,11 @@
     margin: 2%;
     border-radius: 5px;
   }
-  
+  h5 {
+    font-size: 20px;
+  }
   #restart {
    display: flex; 
    margin-left: 30px;
+   size: large;
   }
