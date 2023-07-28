@@ -6,7 +6,7 @@ This Trivia Game is simple web application that allows user to check thier knowl
 
 ![Alt text](image.png)
 
-## Technolgies used
+## Technologies used
 
 HTML -Provides the basic Structure of the web page.
 
