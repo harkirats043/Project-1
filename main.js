@@ -129,7 +129,7 @@ let myQuestions = [
     question: "14. Which continent has the most countries?",
     answers: [
       { option: "Asia", correct: false },
-      { option: "Africe", correct: true },
+      { option: "Africa", correct: true },
       { option: "South America", correct: false },
       { option: "Europe", correct: false }
     ]

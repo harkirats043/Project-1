@@ -4,7 +4,7 @@ This Trivia Game is simple web application that allows user to check thier knowl
 
 ## ScreenShots
 
-
+![Alt text](image.png)
 
 ## Technolgies used
 
@@ -24,6 +24,10 @@ JavaScript-Implements functionality and interactivity of the quiz.
 4. It will take to you next question and increase one score if the answer is right.
 5. It allows user to restart the game if wanted.
 6. When the quiz is finished it display the number of answers guessed right.
+
+## LINK
+
+https://harkirats043.github.io/Project-1/
  
  
 ## Sources 
