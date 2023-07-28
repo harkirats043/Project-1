@@ -27,7 +27,7 @@ JavaScript-Implements functionality and interactivity of the quiz.
 
 ## LINK
 
-https://harkirats043.github.io/Project-1/
+https://harkirats043.github.io/Trivia-Game/
  
  
 ## Sources 
