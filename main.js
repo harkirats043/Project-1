@@ -1,8 +1,6 @@
 console.log("js-loaded");
 
 let pScore = 0;
-
-
 let currentQuestion = 0;
 
 let questionEl = document.querySelector("#ques");
@@ -192,15 +190,12 @@ let myQuestions = [
   },  
 ];
 
-
-
-
 function init() {
   renderQuestion();
 }
 
 function renderQuestion() {
-  
+
   questionEl.innerHTML = myQuestions[currentQuestion].question
   optionEl = myQuestions[currentQuestion].answers;
 
@@ -213,8 +208,6 @@ function renderQuestion() {
 btnEl.forEach(function(btn) {
   btn.addEventListener("click", handleClick)
 });
-
-
 
 function handleClick(event) {
 
